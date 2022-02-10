@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/registerJs.js"></script>
+    <title>Register</title>
+</head>
+<body onload="init()">
+    
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="inactive underlineHover"><a href="login"> Sign In </a></h2>
+          <h2 class="active">Sign Up </h2>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+           <img src="./images/user.jpg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <input type="text" id="username" class="fadeIn third" name="username" placeholder="Username">
+            <input type="text" id="firstname" class="fadeIn third" name="firstname" placeholder="First name">
+            <input type="text" id="lastname" class="fadeIn third" name="lastname" placeholder="Last name">
+            <input type="email" id="email" class="fadeIn third" name="email" placeholder="E-mail">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+            <input type="password" id="confirmPassword" class="fadeIn third" name="confirmPassword" placeholder="Confirm Password">
+            <br><br>
+            <input type="radio" id="moderator" class="fadeIn third" name="moderator" value="moderator" checked>
+            <label>Moderator</label><br><br>
+            <input type="radio" id="user" class="fadeIn third" name="moderator" value="user">
+            <label>User</label><br><br>
+            <input type="submit" id="btn" class="fadeIn fourth" value="Register">
+          </form>
+      
+        
+      
+        </div>
+      </div>
+
+</body>
+</html>

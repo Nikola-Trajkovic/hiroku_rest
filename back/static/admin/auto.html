@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto</title>
+    <link rel="stylesheet" href="css/auto.css">
+    <script src="js/autoJs.js"></script>
+</head>
+<body onload="init()">
+    <nav>
+        <ul>
+          <li class="list levi"><a href="/admin/index">Home</a></li>
+          <li class="list desni"><label id="logOut">Log out</label></li>
+        </ul>
+      </nav>
+
+      <div class="glavni">
+
+        <div class="prvi">
+            <h1>Unesi novi Automobil</h1><br>
+            <form>
+                <input type="text" id="marka" placeholder="Marka"><br><br>
+                <input type="text" id="model" placeholder="Model "><br><br>
+                <input type="number" id="godiste" placeholder="Godiste "><br><br>
+                <input type="number" id="kilometraza" placeholder="Kilometraza"><br><br>
+                <input type="text" id="menjac" placeholder="Menjac"><br><br>
+                <input type="text" id="gorivo" placeholder="Gorivo"><br><br>
+                <input type="submit" class="unesi" id="unesiBtn" value="Dodaj"><br><br>
+
+            </form>
+        </div>
+
+        <div class="drugi">
+
+            <h1>Update automobil</h1><br>
+            <form>
+              <input type="text" id="markaU" placeholder="Marka" disabled><br><br>
+              <input type="text" id="modelU" placeholder="Model " disabled><br><br>
+              <input type="number" id="godisteU" placeholder="Godiste " disabled><br><br>
+              <input type="number" id="kilometrazaU" placeholder="Kilometraza" disabled><br><br>
+              <input type="text" id="menjacU" placeholder="Menjac" disabled><br><br>
+              <input type="text" id="gorivoU" placeholder="Gorivo" disabled><br><br>
+              <input type="submit" class="unesi" id="unesiBtnU" value="Update" disabled><br><br>
+
+            </form>
+            
+        </div>
+
+        <div class="treci">
+            <h1>Automobili:</h1>
+            <ul id="usrLst">
+            </ul>
+
+        </div>
+
+
+      </div>
+    
+</body>
+</html>

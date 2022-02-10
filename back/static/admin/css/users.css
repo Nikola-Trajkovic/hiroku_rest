@@ -1,0 +1,97 @@
+body{
+    background-image: url('../images/bgIndex.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1%;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+   
+}
+nav{
+    background-color: #FFC312;
+    
+}
+a, label{
+    text-decoration: none;
+    color: #FFC312;
+}
+.levi{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.desni{
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 40px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.list{
+    background-color: black;
+}
+.glavni{
+    display: flex;
+    justify-content: center;
+}
+.glavni > div{
+    background-color: #FFC312;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5%;
+    text-align: center;
+}
+input[type=text],input[type=email],input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+.unesi{
+    background-color: black;
+    color: #FFC312;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    border-radius: 10%;
+}
+.treci{
+    overflow: auto;
+}
+.lstUser{
+
+    border: 1px solid black;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.liBtn{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: #FFC312;
+}

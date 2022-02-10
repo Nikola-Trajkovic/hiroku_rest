@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/users.css">
+    <script src="js/usersJs.js"></script>
+</head>
+<body onload="init()">
+    <nav>
+        <ul>
+          <li class="list levi"><a href="/admin/index">Home</a></li>
+          <li class="list desni"><label id="logOut">Log out</label></li>
+        </ul>
+      </nav>
+
+      <div class="glavni">
+
+        <div class="prvi">
+            <h1>Unesi novog korisnika</h1><br>
+            <form>
+                <input type="text" id="username" placeholder="Username"><br><br>
+                <input type="text" id="firstname" placeholder="First name"><br><br>
+                <input type="text" id="lastname" placeholder="Last name"><br><br>
+                <input type="email" id="email" placeholder="E-mail"><br><br>
+                <input type="password" id="password" placeholder="Password"><br><br>
+                <input type="password" id="confirmPassword" placeholder="Confirm password"><br>
+                <p>Moderator</p>
+                <input type="radio" id="moderator" value="moderator" name="type" checked><br>
+                <p>User</p>
+                <input type="radio" id="user" value="user" name="type"><br><br>
+                <input type="submit" class="unesi" id="unesiBtn" value="Dodaj"><br>
+
+            </form>
+        </div>
+
+        <div class="drugi">
+
+            <h1>Update korisnika</h1><br>
+            <form>
+                <input type="text" id="usernameU" placeholder="Username" disabled><br><br>
+                <input type="text" id="firstnameU" placeholder="First name" disabled><br><br>
+                <input type="text" id="lastnameU" placeholder="Last name" disabled><br><br>
+                <input type="email" id="emailU" placeholder="E-mail" disabled><br><br>
+                <p>Moderator</p>
+                <input type="radio" id="moderatorU" value="moderator" name="type" disabled><br>
+                <p>User</p>
+                <input type="radio" id="userU" value="user" name="type" disabled><br><br>
+                <input type="submit" class="unesi" id="unesiBtnU" value="Update" disabled>
+
+            </form>
+            
+        </div>
+
+        <div class="treci">
+            <h1>Korisnici:</h1>
+            <ul id="usrLst">
+            </ul>
+
+        </div>
+
+
+      </div>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oglas auto</title>
+    <link rel="stylesheet" href="css/oglas_auto.css">
+    <script src="js/oglas_autoJs.js"></script>
+</head>
+<body onload="init()">
+
+    <nav>
+        <ul>
+          <li class="list levi"><a href="/admin/index">Home</a></li>
+          <li class="list desni"><label id="logOut">Log out</label></li>
+        </ul>
+      </nav>
+
+      <div class="glavni">
+
+        <div class="prvi">
+            <h1>Unesi novi oglas za auto</h1><br>
+            <form>
+                <textarea name="opis" id="opis" cols="20" rows="10" placeholder="Opis"></textarea><br><br>
+                <input type="number" id="likes" placeholder="Likes "><br><br>
+                <input type="number" id="dislikes" placeholder="Dislikes"><br><br>
+                <input type="text" id="contact" placeholder="Contact"><br><br>
+                <input type="number" id="cena" placeholder="Cena"><br><br>
+                <label class="zaOption" for="cars">Izaberi auto:</label><br>
+                <select name="cars" id="cars">
+
+                </select><br><br><br>
+                <input type="submit" class="unesi" id="unesiBtn" value="Dodaj"><br><br>
+
+            </form>
+        </div>
+
+        <div class="drugi">
+
+            <h1>Update automobil</h1><br>
+            <form>
+                <textarea name="opis" id="opisU" cols="20" rows="10" placeholder="Opis" disabled></textarea><br><br>
+                <input type="number" id="likesU" placeholder="Likes " disabled><br><br>
+                <input type="number" id="dislikesU" placeholder="Dislikes" disabled><br><br>
+                <input type="text" id="contactU" placeholder="Contact" disabled><br><br>
+                <input type="number" id="cenaU" placeholder="Cena" disabled><br><br>
+                <input type="submit" class="unesi" id="unesiBtnU" value="Dodaj" disabled><br><br>
+
+            </form>
+            
+        </div>
+
+        <div class="treci">
+            <h1>Oglasi automobila:</h1>
+            <ul id="usrLst">
+            </ul>
+
+        </div>
+
+
+      </div>
+    
+</body>
+</html>
